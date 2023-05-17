@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        p{
+            color:chartreuse;
+
+        }
+        div{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo <strong><s>DOM</s></strong> </p>
+    <div id = "msg">Clíque aqui!</div> 
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+            p1.style.color = 'yellow'
+        var d = window.document.getElementById('msg')
+            d.style.backgroundColor = 'green'
+    </script>
+</body>
+</html>

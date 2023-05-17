@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> =
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <div id="concat">Resultado</div>
+    <div id="ab">Resultado</div>
+    <script>
+       
+       function somar(a,b){
+            var a = document.getElementById("txtn1")
+            var b = document.getElementById("txtn2")
+            var res=window.document.getElementById("res")
+            var concat=window.document.getElementById("concat")
+            var ab=window.document.getElementById("ab")
+            var n1 = Number(a.value)
+            var n2 = Number(b.value)
+            var s = n1+n2
+            var concat = a.value+b.value
+            res.innerHTML = "A soma entre "+n1+" e "+n2+" resulta em: "+s
+            concat.innerHTML= a.value + b.value
+
+        }
+
+    </script>
+</body>
+</html>

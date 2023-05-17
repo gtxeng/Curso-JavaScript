@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da página</title>
+    <style>
+        body { 
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+        h1 {
+            color:rgb(209, 218, 170);
+        }
+        p {
+            color: rgb(223, 206, 58); 
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Olá, mundo! </h1>
+    <p>Minha maldição foi embora</p>
+
+    <script>
+        /*
+        Comentário é assim
+        em bloco
+        */
+        //comentário em linha
+        //window.confirm("Está gostando de JS")
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert("Sómente "+ nome +" tem o poder ")
+        /*
+        var n1 = parseFloat(window.prompt('Dígite um número: '))//transforma em float já que o prompt trás uma string
+        var n2 = parseInt(window.prompt('Dígite um número: '))//transforma em int já que o prompt trás uma string
+        */
+        var n1 = Number(window.prompt('Dígite um número: '))//transforma em Number já que o prompt trás uma string
+        var n2 = Number(window.prompt('Dígite um número: '))//transforma em Number já que o prompt trás uma string
+        s = n1 + n2 //o js entende que é o "+" é usado para soma quando as duas VAR somadas são do tipo primitivo NUMBER
+        window.alert(`Soma ${n1} + ${n2} = ${s} `)//caso queira transformar o s para string, pode se usar o "String(s)" ou "s.toString()"
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 009</title>
+</head>
+<body>
+    <h1>Sistema Etínico</h1>
+    Digite seu país de origem:<input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"> </div>
+   <script>
+        function verificar(){
+            var nacionalidade = document.getElementById("nacionalidade")
+            nacionalidade = String(nacionalidade.value)
+            if(nacionalidade == "BRASIL"){
+                res.innerHTML = "<p> Você é Brasileiro</p>"
+            }else{
+                res.innerHTML = "<p> Você é Estrangeiro</p>"
+            }
+        }
+    </script>
+</body>
+</html>
